@@ -149,6 +149,20 @@
             display: inline-block;
         }
 
+        .bai6a {
+            width: 620px;
+            height: 500px;
+            background-color: #d9d9a2;
+            text-align: center;
+            box-shadow: 0 0 10px rgb(0 0 0 / 70%);
+            padding-top: 10px;
+        }
+
+        .bai6a table {
+            width: 580px;
+            height: 480px;
+        }
+
         .bai7 {
             margin-top: 16px;
             box-shadow: 0 0 10px rgb(0 0 0 / 70%);
@@ -184,17 +198,19 @@
             
         }
 
-
         .bai9a table {
             width: 500px;
             height: 600px;       
+        }
+
+        .bai9b table {
+            margin-top: 70px;  
         }
 
         .bai9a table, .bai9b table {
             border-collapse: collapse;
             text-align: center;
             background-color: #edff78;
-            margin: 0 24px;
             box-shadow: 0 0 10px rgb(0 0 0 / 70%);
         }
 
@@ -507,6 +523,119 @@
         <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Officia, blanditiis nam? Maiores ipsum consectetur exercitationem eveniet rem sequi officia, nostrum quam molestias laudantium accusantium iure quis illo harum, sint provident?
         Expedita, dolores. Velit eum non aliquam vero, praesentium alias veritatis nostrum, modi aliquid, ea magnam doloribus quo ipsa! Ullam autem saepe soluta nobis magnam veritatis. Hic nihil voluptatum totam esse.</p>
         <a href="#">Back to top</a>
+    </div>
+
+    <div class="bai6a mg-bt-16">
+        <table border="1">
+            <tr>
+                <td style="background-color: #fff;">1</td>
+                <td colspan="4" style="background-color: #fff;">2</td>
+            </tr>
+
+            <tr>
+                <td rowspan="3" style="background-color: #fff;">3</td>
+                <td style="background-color: orange;">4</td>
+                <td style="background-color: orange;">5</td>
+                <td colspan="2" rowspan="2" style="background-color: yellow;">6</td>
+            </tr>
+
+            <tr>
+                <td style="background-color: orange;">7</td>
+                <td style="background-color: orange;">8</td>
+            </tr>
+
+            <tr>
+                <td colspan="2" style="background-color: yellow;">9</td>
+                <td colspan="2" style="background-color: yellow;">10</td>
+            </tr>
+
+        </table>
+    </div>
+
+    <div class="bai6b mg-bt-16">
+        <div class="bai6b1">
+            <table>
+                <tr>
+                    <td>(1)</td>
+                    <td>(2)</td>
+                    <td>(3)</td>
+                    <td rowspan="3">(4)</td>
+                    <td>(5)</td>
+                </tr>
+
+                <tr>
+                    <td></td>
+                    <td rowspan="5" style="text-decoration: underline;">Part I</td>
+                    <td></td>
+                </tr>
+
+                <tr>
+                    <td rowspan="2"></td>
+                    <td rowspan="4" style="text-decoration: underline;">Chapter 1</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td rowspan="3">Seaction A</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="3"></td>
+                    <td rowspan="3">Seaction B</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td rowspan="2"></td>
+                    <td rowspan="4" style="text-decoration: underline;">Chapter 2</td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+                <tr>
+                    <td></td>
+                    <td></td>
+                    <td></td>
+                </tr>
+            </table>
+        </div>
     </div>
 
     <div class="bai7 mg-bt-16">
@@ -878,7 +1007,7 @@
     <div class="bai11 mg-bt-16">
         <img src="/img/drum.jfif" alt="drum">
         <h2>About</h2>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto enim quibusdam non provident! Eius fugiat ullam necessitatibus rerum, dolores deserunt nihil officia, culpa assumenda quibusdam, doloribus eum aliquid quos sint.</p>
+        <p>Lorem ipsum dolor sit amet <b>consectetur adipisicing</b>  elit. Architecto enim quibusdam non provident! <i>Eius fugiat ullam</i> necessitatibus rerum, dolores deserunt nihil officia, culpa assumenda quibusdam, doloribus eum aliquid quos sint.</p>
         <h2>Projects</h2>
         <ul class="bai11__ul">
             <li>
@@ -912,13 +1041,13 @@
     </div>
 
     <div class="bai12 mg-bt-16">
-        <p>Name:</p>
+        <label>Name:</label>
         <input type="text" name="" placeholder="Thanh Van" required id="" class="form mg-bt-16">
         <input class="form mg-bt-16" type="submit" value="Submit"></input>
     </div>
 
     <div class="bai13 mg-bt-16">
-        <form action="" method="post">
+        <form action="" method="post" autocomplete="on">
             <p>Name: <br>
                 <input type="text" name="txtName" value="" size="20" maxlength="20" placeholder="Your Name">
             </p>
@@ -944,6 +1073,30 @@
 
             <p><input type="submit" value="Submit"></p>
         </form>
+    </div>
+
+    <div class="bai14">
+        <h2>Contact Us</h2>
+        <p>Use the following from to send a message to Example Cafe</p>
+        <p> Your email
+            <input type="text"> 
+        </p>
+        <p>
+            Message
+            <textarea name="message" id="message" cols="30" rows="10"></textarea>
+        </p>
+        
+        <p>
+            How did you hear of us?
+            <select name="Google" id=""><option>Google</option></select>
+        </p>
+
+        <p>
+            Newsletter
+            <input type="checkbox">
+            Ensure this box is checked if you would like to receive emial updates
+        </p>
+        <input class="form mg-bt-16" type="submit" value="Send message"></input>
     </div>
 
 </body>
